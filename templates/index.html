@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <meta name="description" content="Arte y decoración en madera.">
+  <meta name="author" content="Yeison Builes">
+  <meta name="keywords" content="Arte en madera, detalles, mdf, tallado, carpinteria, decoracion, fincas">
+  <link rel="shortcut icon" href="{{url_for('static', filename='img/favicon.ico')}}" type="image/x-icon">
+  <title>DetallArte</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/mobile.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/tablet.css')}}">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section class="page">
+    <!--Nav -->
+    <nav class="menu">
+      <div class="logobox">
+        <h1 class="logo"><i class="fas fa-tree"></i> DetallArte</h1>
+        <span class="btn-menu"><i class="fas fa-bars"></i></span>
+      </div>
+      <div class="list-container">
+        <ul class="lists">
+          <li><a href="#" class="active">Inicio</a></li>
+          <li><a href="#">Quienes Somos</a></li>
+          <li><a href="#">Galería</a></li>
+          <li><a href="#">Artistas</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header id="header">
+      <!--Image Header -->
+      <figure class="img-header">
+        <div class="welcome">
+          <h4>Arte, Decoración y Talla en Madera</h4>
+          <h2>DetallArte <i class="fas fa-tree"></i></h2>
+        </div>
+      </figure>
+    </header>
+
+    <!--Quienes somos -->
+    <figure class="img-info">
+      <div class="info">
+        <h4>Quienes Somos</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </figure>
+
+    <!-- gallery-->
+    <figure class="img-gallery">
+      <div class="gallery-section">
+        <div class="info-gallery">
+          <h4>Galería</h4>
+          <p>Estas son algunas de las obras que hemos realizado</p>
+        </div>
+        <div class="gallery-content">
+          <div class="img-card"><img src="{{url_for('static',filename='img/img-1.jpg')}}" alt="Animal"></div>
+          <div class="img-card"><img src="{{url_for('static',filename='img/img-2.jpg')}}" alt="Animal"></div>
+          <div class="img-card"><img src="{{url_for('static',filename='img/img-3.jpg')}}" alt="Animal"></div>
+          <div class="img-card"><img src="{{url_for('static',filename='img/img-4.jpg')}}" alt="Animal"></div>
+          <div class="img-card"><img src="{{url_for('static',filename='img/img-5.jpg')}}" alt="Animal"></div>
+          <div class="img-card"><img src="{{url_for('static',filename='img/img-6.jpg')}}" alt="Animal"></div>
+          <div class="img-card"><img src="{{url_for('static',filename='img/img-7.jpg')}}" alt="Animal"></div>
+          <div class="img-card"><img src="{{url_for('static',filename='img/img-8.jpg')}}" alt="Animal"></div>
+          <div class="img-card"><img src="{{url_for('static',filename='img/img-9.jpg')}}" alt="Animal"></div>
+          <div class="img-card"><img src="{{url_for('static',filename='img/img-10.jpg')}}" alt="Animal"></div>
+          <div class="img-card"><img src="{{url_for('static',filename='img/img-11.jpg')}}" alt="Animal"></div>
+          <div class="img-card"><img src="{{url_for('static',filename='img/img-12.jpg')}}" alt="Animal"></div>
+        </div>
+    </figure>
+    <div class="modal">
+      <span id="closeModal"><i class="fas fa-times"></i></span>
+      <img id="imgModal" src="{{url_for('static',filename='img/img-4.jpg')}}">
+      <p id="caption">Animal Pruebas</p>
+    </div>
+    </div>
+
+    <!--Artistas-->
+    <section class="artistas">
+      <h4>Artistas</h4>
+      <div class="content-artistas">
+        <div class="adri-container">
+          <div class="card">
+            <h2>Adriana Patricia</h2>
+            <div class="img-adri"><img src="{{url_for('static',filename='img/mujer.jpg')}}"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt, ed do eiusmod tempor incididunt</p>
+          </div>
+        </div>
+
+        <div class="carlos-container">
+          <div class="card">
+            <h2>Carlos Mario</h2>
+            <div class="img-carlos"><img src="{{url_for('static',filename='img/hombre.jpg')}}"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt, ed do eiusmod tempor incididunt</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+
+    </footer>
+  </section>
+
+  <!--Scripts -->
+  <script src="{{url_for('static', filename='js/app.js')}}"></script>
+  <script src="https://kit.fontawesome.com/b4d58520df.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
