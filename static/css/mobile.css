@@ -1,0 +1,43 @@
+@media only screen and (max-width:560px) {
+
+  /*Estilo para dispositivos mobiles*/
+  /*Quienes somos*/
+  .img-info .info>p {
+    margin: 0 20px;
+  }
+
+  /*Galeria*/
+  .img-gallery{
+    height: 260vh;
+  }
+  .img-gallery .info-gallery {
+    margin-top: 35px;
+  }
+  .gallery-content{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6, 170px);
+    grid-gap: 20px;
+  }
+
+  /*Modal*/
+  .modal{width: 90%;
+  height: 100%;}
+
+  .modal #caption{font-size: 20px;}
+
+  .modal #closeModal{right: 30px;}
+
+  /*Artistas*/
+.adri-container .card .img-adri{width: 150px; height: 150px;}
+.adri-container .card h2{font-size: 20px; margin-top: 50px;}
+.carlos-container .card h2{font-size: 20px; margin-top: 50px;}
+.adri-container .card p{margin:10px 20px;}
+.carlos-container .card p{margin:10px 20px;}
+.carlos-container .card .img-carlos{width: 150px; height: 150px;}
+
+/*footer*/
+footer{height: 300px;}
+footer .social-div{display: block;}
+footer .social-div .social-media{margin-top: 5px;}
+footer .social-div .social-media a{margin-top: 5px;}
+}
